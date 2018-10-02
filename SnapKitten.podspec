@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SnapKitten'
-  s.version          = '1.2.6'
+  s.version          = '1.2.8'
   s.summary          = 'A library based on SnapKit and Constraint system. It try to simplify the linear case of UI Constraint'
 
 # This description is used to generate tags and improve search results.
@@ -22,15 +22,15 @@ A library based on SnapKit and Constraint system. It try to simplify the linear 
   Future would create a android equalivalent.
                        DESC
 
-  s.homepage         = 'https://github.com/springwong/SnapKitten'
+  s.homepage         = 'https://github.com/vic1106/SnapKitten'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Spring Wong' => 'rudolphwong2002@gmail.com' }
-  s.source           = { :git => 'https://github.com/springwong/SnapKitten.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/vic1106/SnapKitten.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-s.pod_target_xcconfig = { "SWIFT_VERSION" => "4.0" }
-s.swift_version = '4.0'
-  s.ios.deployment_target = '8.0'
+s.pod_target_xcconfig = { "SWIFT_VERSION" => "4.2" }
+s.swift_version = '4.2'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'SnapKitten/Classes/**/*'
   
@@ -40,5 +40,5 @@ s.swift_version = '4.0'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'SnapKit', '~> 4.0.0'
+  s.dependency 'SnapKit', '~> 4.0.1'
 end
